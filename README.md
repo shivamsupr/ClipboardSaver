@@ -14,9 +14,21 @@ A lightweight macOS menu bar utility that saves clipboard images to disk.
 ## Requirements
 
 - macOS 13.0+
-- Xcode Command Line Tools (`xcode-select --install`)
 
-## Build & Install
+## Install from Release
+
+1. Download `ClipboardSaver.dmg` from the [latest release](https://github.com/shivamsupr/ClipboardSaver/releases/latest)
+2. Open the DMG
+3. Run in Terminal:
+   ```bash
+   bash /Volumes/ClipboardSaver/install.sh
+   ```
+4. Grant **Accessibility** access: System Settings → Privacy & Security → Accessibility → enable ClipboardSaver
+5. Enable **Finder extension**: System Settings → Privacy & Security → Extensions → Added Extensions → enable ClipboardSaver
+
+## Build from Source
+
+Requires Xcode Command Line Tools (`xcode-select --install`).
 
 ```bash
 git clone https://github.com/shivamsupr/ClipboardSaver.git
