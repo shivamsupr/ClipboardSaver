@@ -54,9 +54,17 @@ open ~/Applications/ClipboardSaver.app
 
 ## Usage
 
-- **Keyboard shortcut**: Press `Ctrl+Cmd+G` to save the current clipboard image
-- **Right-click in Finder**: Select "Save Clipboard Image" from the context menu
-- **Menu bar**: Click the clipboard icon in the menu bar for options
+| Action | How |
+|--------|-----|
+| **Keyboard shortcut** | <kbd>⌃</kbd> <kbd>⌘</kbd> <kbd>G</kbd> — save clipboard image to disk |
+| **Right-click in Finder** | 📁 Select **Save Clipboard Image** from the context menu |
+| **Menu bar** | 📋 Click the clipboard icon in the menu bar for options |
+| **Change shortcut** | ⌨️ Menu bar → **Change Shortcut...** to record a new hotkey |
+| **Change save location** | 📂 Menu bar → **Default Save Location...** to pick a folder |
+| **Launch at login** | 🔄 Menu bar → **Launch at Login** to toggle auto-start |
+
+Default save directory: `~/Downloads/clipboard-images`
+Default filename format: `clipboard-YYYY-MM-DD-HHmmss.png`
 
 ## Build DMG for Distribution
 
