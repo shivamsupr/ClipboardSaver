@@ -13,10 +13,18 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
         // Set up notification delegate so notifications show while app is foreground
         UNUserNotificationCenter.current().delegate = self
 
+        promptForAccessibilityIfNeeded()
         setupStatusItem()
         setupMenu()
         setupHotKey()
         setupServices()
+    }
+
+    // MARK: - Accessibility Permission
+
+    private func promptForAccessibilityIfNeeded() {
+        let options = [kAXTrustedCheckOptionPrompt.takeRetainedValue(): true] as CFDictionary
+        AXIsProcessTrustedWithOptions(options)
     }
 
     // Allow notifications to display even when app is in foreground
