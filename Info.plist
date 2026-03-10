@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>ClipboardSaver</string>
+    <key>CFBundleDisplayName</key>
+    <string>ClipboardSaver</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.local.clipboardsaver</string>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleExecutable</key>
+    <string>ClipboardSaver</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>com.local.clipboardsaver</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>clipboardsaver</string>
+            </array>
+        </dict>
+    </array>
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright 2026. All rights reserved.</string>
+    <key>NSServices</key>
+    <array>
+        <dict>
+            <key>NSMenuItem</key>
+            <dict>
+                <key>default</key>
+                <string>Save Clipboard Image</string>
+            </dict>
+            <key>NSMessage</key>
+            <string>handleSaveService</string>
+            <key>NSPortName</key>
+            <string>ClipboardSaver</string>
+            <key>NSSendTypes</key>
+            <array>
+                <string>public.tiff</string>
+                <string>public.png</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>
